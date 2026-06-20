@@ -14,12 +14,12 @@ This repository is strictly curated to ensure full transparency and reproducibil
 ### 2. MATLAB Codes (Year 2023)
 * A folder containing all forecasting scripts and rule-generation codes tested on the 2023 hold-out dataset.
 * Includes independent implementations of the baseline and benchmark models: **Type-1 FIS**, **Standard IT2FIS**, **IT2FIS-CSA**, **IT2FIS-FA**, and the proposed **IT2FIS-OOA**.
-* **Master Script (`Performanceresult2023.m`):** An automated script designed to execute 30 independent stochastic runs of the metaheuristic algorithms. Executing this script will automatically regenerate the statistical performance logs (Table 8), convergence curves (Fig. 7a), and statistical distribution boxplots (Fig. 8a) for the 2023 dataset.
+* **Master Script (`Performanceresult2023.m`):** An automated script designed to execute 30 independent stochastic runs of the metaheuristic algorithms.
 
 ### 3. MATLAB Codes (Year 2024)
 * A folder containing all forecasting scripts and rule-generation codes tested on the 2024 hold-out dataset.
 * Includes independent implementations of the baseline and benchmark models: **Type-1 FIS**, **Standard IT2FIS**, **IT2FIS-CSA**, **IT2FIS-FA**, and the proposed **IT2FIS-OOA**.
-* **Master Script (`Performanceresult2024.m`):** An automated script designed to execute 30 independent stochastic runs of the metaheuristic algorithms. Executing this script will automatically regenerate the statistical performance logs (Table 8), convergence curves (Fig. 7b), and statistical distribution boxplots (Fig. 8b) for the 2024 dataset.
+* **Master Script (`Performanceresult2024.m`):** An automated script designed to execute 30 independent stochastic runs of the metaheuristic algorithms. 
 
 ### 4. IT2FLT Folder Toolbox
 * Contains the **Interval Type-2 Fuzzy Logic Toolbox** developed by Prof. Oscar Castillo. 
