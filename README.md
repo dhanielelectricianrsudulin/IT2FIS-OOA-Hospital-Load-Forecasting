@@ -7,26 +7,29 @@ This repository is strictly curated to ensure full transparency and reproducibil
 
 ## 📁 Repository Contents
 
-### 1. Dataset and Evaluation Metrics (Excel)
-* **Raw Data & Preprocessing:** Contains the raw electrical load records from Ulin Regional Public Hospital spanning 2020 to 2024.
-* **Chronological Train-Test Split:** Explicitly defines the data partitioning to prevent data leakage (2020-2022 for FoU optimization training, 2023-2024 for independent hold-out testing).
-* **Calculated Indicators:** Step-by-step spreadsheet calculations for WDmax, LDmax, TLDmax, and VLDmax.
-* **Final Results:** The fully compiled prediction results and evaluation metrics (R-squared, RMSE, MAE, and MAPE) corresponding to the tables in the manuscript.
+### 1. Dataset and Evaluation Metrics (Excel File)
+* Contains the raw electrical load records from Ulin Regional Public Hospital spanning 2020 to 2024.
+* Includes explicit chronological train-test splits (to prevent data leakage), preprocessing calculations (WDmax, LDmax, TLDmax, and VLDmax), and the fully compiled prediction results with evaluation metrics (R-squared, RMSE, MAE, and MAPE).
 
-### 2. Primary Forecasting Models (MATLAB Scripts)
-* **Type-1 FIS:** Baseline fuzzy logic forecasting implementation.
-* **Standard IT2FIS:** Interval Type-2 fuzzy logic forecasting implementation.
-* **IT2FIS-OOA (2023 & 2024):** The proposed hybrid algorithm scripts. These scripts integrate the IT2FIS fuzzy rule-generation codes with the Orangutan Optimization Algorithm (OOA). They contain fixed algorithm hyperparameters, search space boundaries, and optimization logs for regenerating the final forecast results.
+### 2. MATLAB Codes (Year 2023)
+* A folder containing all forecasting scripts and rule-generation codes tested on the 2023 hold-out dataset.
+* Includes independent implementations of the baseline and benchmark models: **Type-1 FIS**, **Standard IT2FIS**, **IT2FIS-CSA**, **IT2FIS-FA**, and the proposed **IT2FIS-OOA**.
 
-### 3. Benchmark Models and Statistical Validation (MATLAB Scripts)
-* **Benchmark Algorithms:** Source codes for the comparative models, including Cuckoo Search Algorithm (CSA), Firefly Algorithm (FA), and Zebra Optimization Algorithm (ZOA).
-* **Generate_Table_8.m:** A specific script designed to independently verify the statistical robustness of the proposed method. Running this script will execute 30 independent stochastic runs for the OOA, CSA, FA, and ZOA algorithms, automatically outputting the 'Best' (minimum objective error) and 'Standard Deviation' logs to regenerate Table 8.
+### 3. MATLAB Codes (Year 2024)
+* A folder containing all forecasting scripts and rule-generation codes tested on the 2024 hold-out dataset.
+* Includes independent implementations of the baseline and benchmark models: **Type-1 FIS**, **Standard IT2FIS**, **IT2FIS-CSA**, **IT2FIS-FA**, and the proposed **IT2FIS-OOA**.
+
+### 4. IT2FLS Toolbox
+* Contains the **Interval Type-2 Fuzzy Logic Toolbox** developed by Prof. Oscar Castillo. 
+* This toolbox is included directly in this repository to ensure reviewers and readers have the exact dependency required to run the scripts smoothly without versioning conflicts.
 
 ## ⚙️ System Requirements
-To independently run the source codes and verify the results, the following environment is required:
 * **MATLAB R2013a** (or compatible versions).
-* **Interval Type-2 Fuzzy Logic Toolbox** developed by Prof. Oscar Castillo.
+* **Interval Type-2 Fuzzy Logic Toolbox** (already included in folder #4).
 
 ## 🚀 Reproducibility Guide
-1. Ensure the dataset (`.xls` or `.xlsx`) is located in the same working directory as the MATLAB scripts.
-2. To verify the multi-year forecasting accuracy, execute the `IT2FIS_OOA_2023.m` and `IT2FIS_OOA_2024.m` scripts.
+To independently run the source codes and verify the numerical results, please follow these steps:
+1. Download or clone this entire repository to your local machine.
+2. Open MATLAB and add the IT2FLS Toolbox folder to your MATLAB path. *(Right-click the toolbox folder in the Current Folder browser -> Select "Add to Path" -> "Selected Folders and Subfolders")*.
+3. Ensure the Excel dataset file is placed in the same working directory as the MATLAB scripts you wish to execute.
+4. Open any algorithm script from the 2023 or 2024 folders (e.g., executing `IT2FIS00A2023.m`) and run it to verify the forecasting accuracy and statistical robustness presented in the paper's evaluation tables.
