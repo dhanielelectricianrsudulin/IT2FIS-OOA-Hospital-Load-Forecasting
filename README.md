@@ -7,7 +7,7 @@ This repository is strictly curated to ensure full transparency and reproducibil
 
 ## 📁 Repository Contents
 
-### 1. Dataset and Evaluation Metrics (forcasting RSUD ULIN revisi 5 new.xlsx )
+### 1. Dataset and Evaluation Metrics (forecasting RSUD ULIN revisi 5 new.xlsx )
 * Contains the raw electrical load records from Ulin Regional Public Hospital spanning 2020 to 2024.
 * Includes explicit chronological train-test splits (to prevent data leakage), preprocessing calculations (WDmax, LDmax, TLDmax, and VLDmax),Rulebase and the fully compiled prediction results with evaluation metrics (R-squared, RMSE, MAE, and MAPE).
 
