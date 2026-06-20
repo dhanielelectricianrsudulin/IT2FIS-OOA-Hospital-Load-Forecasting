@@ -14,10 +14,12 @@ This repository is strictly curated to ensure full transparency and reproducibil
 ### 2. MATLAB Codes (Year 2023)
 * A folder containing all forecasting scripts and rule-generation codes tested on the 2023 hold-out dataset.
 * Includes independent implementations of the baseline and benchmark models: **Type-1 FIS**, **Standard IT2FIS**, **IT2FIS-CSA**, **IT2FIS-FA**, and the proposed **IT2FIS-OOA**.
+* **Master Script (`Performanceresult2023.m`):** An automated script designed to execute 30 independent stochastic runs of the metaheuristic algorithms. Executing this script will automatically regenerate the statistical performance logs (Table 8), convergence curves (Fig. 7a), and statistical distribution boxplots (Fig. 8a) for the 2023 dataset.
 
 ### 3. MATLAB Codes (Year 2024)
 * A folder containing all forecasting scripts and rule-generation codes tested on the 2024 hold-out dataset.
 * Includes independent implementations of the baseline and benchmark models: **Type-1 FIS**, **Standard IT2FIS**, **IT2FIS-CSA**, **IT2FIS-FA**, and the proposed **IT2FIS-OOA**.
+* **Master Script (`Performanceresult2024.m`):** An automated script designed to execute 30 independent stochastic runs of the metaheuristic algorithms. Executing this script will automatically regenerate the statistical performance logs (Table 8), convergence curves (Fig. 7b), and statistical distribution boxplots (Fig. 8b) for the 2024 dataset.
 
 ### 4. IT2FLT Folder Toolbox
 * Contains the **Interval Type-2 Fuzzy Logic Toolbox** developed by Prof. Oscar Castillo. 
@@ -32,4 +34,5 @@ To independently run the source codes and verify the numerical results, please f
 1. Download or clone this entire repository to your local machine.
 2. Open MATLAB and add the IT2FLT Toolbox folder to your MATLAB path. *(Right-click the toolbox folder in the Current Folder browser -> Select "Add to Path" -> "Selected Folders and Subfolders")*.
 3. Ensure the Excel dataset file is placed in the same working directory as the MATLAB scripts you wish to execute.
-4. Open any algorithm script from the 2023 or 2024 folders (e.g., executing `IT2FIS00A2023.m`) and run it to verify the forecasting accuracy and statistical robustness presented in the paper's evaluation tables.
+4. To verify individual forecasting accuracy, execute specific algorithm scripts (e.g., `IT2FISOOA2023.m`). 
+5. To automatically verify the overall statistical robustness and regenerate the charts presented in the manuscript's evaluation tables, simply run the **`Performanceresult2023.m`** or **`Performanceresult2024.m`** scripts.
