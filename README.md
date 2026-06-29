@@ -24,7 +24,7 @@ A dedicated directory containing the evaluation materials for the 2024 testing s
 * **Dataset (`datafix2024.xls`):** The hold-out evaluation dataset for the 14 special holidays in 2024.
 * **Forecasting Scripts (`.m` files):** Standalone implementations of the baseline and benchmark models for the 2024 data parameters.
 * **Master Script (`Performanceresult2024.m`):** An automated script designed to execute 30 independent stochastic runs of the metaheuristic algorithms. 
-* **Optimization Logs & Visualizations:** Contains the raw statistical performance log (`Optimization_Logs_2024.csv`), alongside the generated **Convergence Curve** and **Statistical Distribution Box Plot** for the year 2024.
+* **Optimization Logs & Visualizations:** Contains the raw statistical performance log (`Optimization_Logs_2024.csv`), alongside the generated **Convergence Curve** and **Statistical Distribution Box Plot** for the year 2024 **(`FitnessCurve2024.jpg` & `Boxplot2024.jpg`)**
 
 ### 4. IT2FLT Folder Toolbox
 * Contains the **Interval Type-2 Fuzzy Logic Toolbox** developed by Prof. Oscar Castillo. 
