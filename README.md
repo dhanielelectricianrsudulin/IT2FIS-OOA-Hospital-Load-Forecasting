@@ -7,16 +7,16 @@ This repository is strictly curated to ensure full transparency and reproducibil
 
 ## 📁 Repository Contents
 
-### 1. Dataset and Evaluation Metrics (`forecasting RSUD ULIN revisi 5 new.xlsx`)
+### 1. Dataset and Evaluation Metrics (`forecasting RSUD ULIN revisi 6 new_1.xlsx`)
 * Contains the raw electrical load records from Ulin Regional Public Hospital spanning 2020 to 2024.
 * Includes explicit chronological train-test splits (to prevent data leakage), preprocessing calculations (WDmax, LDmax, TLDmax, and VLDmax), Rule base, and the fully compiled prediction results with evaluation metrics (R-squared, RMSE, MAE, and MAPE).
 
 ### 2. MATLAB Codes & Results (Year 2023)
 A dedicated directory containing the evaluation materials for the 2023 testing scenario. 
 * **Dataset (`datafix2023.xls`):** The hold-out evaluation dataset containing the historical parameters and target VLDmax for the 14 special holidays in 2023.
-* **Forecasting Scripts (`.m` files):** Standalone implementations of the baseline and benchmark models, including `T1FIS.m`, `IT2FIS.m`, `IT2FISCSA2023.m`, `IT2FISFA2023.m`, `IT2FISZOA2023.m`, and the proposed `IT2FISOOA2023.m`.
+* **Forecasting Scripts (`.m` files):** Standalone implementations of the baseline and benchmark modelsfor the 2023 data parameters.
 * **Master Script (`Performanceresult2023.m`):** An automated script designed to execute 30 independent stochastic runs of the metaheuristic algorithms.
-* **Optimization Logs (`Optimization_Logs_2023_2.csv`):** The raw statistical performance log containing the absolute fitness values (MAE) from the 30 independent runs.
+* **Optimization Logs (`Optimization_Logs_2023.csv`):** The raw statistical performance log containing the absolute fitness values (MAE) from the 30 independent runs.
 * **Visual Evidence (`FitnessCurve2023.jpg` & `Boxplot2023.jpg`):** High-resolution charts generated directly from the optimization logs, visually confirming the superior convergence speed and statistical robustness of the proposed IT2FIS-OOA model against the benchmarks.
 
 ### 3. MATLAB Codes & Results (Year 2024)
